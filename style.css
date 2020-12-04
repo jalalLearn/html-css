@@ -19,7 +19,7 @@ body.stick2{
     transition: all .7s ease;
 }
 .kolshi.sticky{
-    margin-left: -150px;
+    margin-left: -90px;
     transition: all .7s ease;
 }
 .bg{
@@ -31,7 +31,7 @@ body.stick2{
 }
 .logo{
     position: absolute;
-    width: 90px;
+    width: 80px;
     margin-left: 80px;
     margin-top: 10px;
     
@@ -106,6 +106,7 @@ nav{
     background: #34495e;
     width: 100%;
     height: 80px;
+    transition: all 1s ease-in-out;
     
 }
 nav.sticky .logo{
@@ -242,7 +243,16 @@ ul li a:hover{
     font-size: 4.100rem;
     font-weight: 600;
     line-height: 6.5rem;
-    
+    animation: design 3s ease;
+}
+@keyframes design{
+    0%{
+        opacity: 0;transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;transform: scale(1);
+        
+    }
 }
 
 .btn-primary {
@@ -835,7 +845,892 @@ ul i:hover{
     top: 270px;
     padding: 10px;
 }
+.acc .list section p{
+    display: none;
+    text-align: center;
+}
+.acc section:target p{
+    display: block;
+}
+.impress{
+    position: relative;
+    width: 100%;
+}
+.impr{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    z-index: -1;
+    margin-top: 280px;
+    opacity:0.79;
+}
+.impr-tit{
+    position: absolute;
+    margin-top: -380px;
+    font-size: 2.120rem;
+    color: #fff;
+    line-height: 3rem;
+    left: 350px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    
+}
+.impr-p{
+    text-align: center;
+    width: 60;
+    margin-top: -300px;
+    font-family: sans-serif;
+    left: 320px;
+    position: absolute;
+    color: #fff;
+    line-height: 1.4rem;
+    font-size: 14px;
+    font-weight: normal;
+    
 
+}
+.hire-btns{
+    text-align: center;
+}
+.hire1 {
+    position: relative;
+    width: 160px;
+    margin-top: -300px;
+    font-family:'Raleway', sans-serif;
+    color: #fff;
+    background-color: #ff6863;
+    border: 1px solid;
+    border-color: #ff6863;
+    padding: 1rem 2rem;
+    transition: all 0.6s;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 0;
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+}
+.hire2{
+    
+    width: 160px;
+    margin-top: -300px;
+    font-family:'Raleway', sans-serif;
+    color: #fff;
+    background-color:transparent;
+    transition-duration: 0.4s;
+    border: 1px solid;
+    border-color: #fff;
+    padding: 1rem 2rem;
+    transition: all 0.6s;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 0;
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    margin-left: 10px;
+
+}
+
+.hire1:hover{
+    background-color: rgb(255, 240, 250);
+    color: #ff6863 ;
+    outline: none;
+    border: none;
+}
+.hire2:hover{
+    background-color: #ff6863;
+    outline: none;
+    border: none;
+}
+.portfolio{
+    position: relative;
+    text-align: center;
+    margin-top: -30px;
+    width: 100%;
+    height: 180vh;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+.port-tit{
+    left: 290px;
+    margin-top: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.900rem;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    position: absolute;
+    transform: translate(90%);
+}
+.portfolio hr{
+    
+    width: 120px;
+    margin-top: 140px;
+    position: absolute;
+    left: 600px;
+    border: 1px solid red;
+}
+.portfolio p{
+    position:absolute;
+    left: 350px;
+    margin-top: 200px;
+    line-height: 1.4rem;
+    font-size: 14px;
+    font-weight: normal;
+    font-family:sans-serif;
+    color: #797979;
+}
+.port-pic{
+    position: relative;
+    width: 100%;
+    margin-top: -850px;
+    padding-left: 80px;
+}
+.port-pic img{
+    
+    width: 350px;
+    max-height: 300px;
+    min-height: 50px;
+    
+}
+.port-pic img:hover{
+    transform: scale(1.1);
+}
+
+.our-skill{
+    position: relative;
+    padding-left: 90px;
+    margin-top: 150px;    
+}
+.tit-ski{
+    position: absolute;
+    font-size: 2.1rem;
+    line-height: 3rem;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    font-weight: 500;
+    
+}
+.our-skill hr{
+    margin-top: 40px;
+    border: 1px solid red;
+}
+.our-skill p{
+
+    margin-top: 30px;
+    line-height: 1.4rem;
+    font-size: 14px;
+    font-weight: normal;
+    font-family:sans-serif;
+    color: #797979;
+
+}
+.titre1{
+    position: absolute;
+    left: 683px;
+    top: 15px;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.progress1{
+    position: relative;
+    left: 47%;
+    background-color: #f2f2f2;
+    height: 10px;
+    width: 600px;
+    top: -200px;
+}
+.prog1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    background-color: #ff6863;
+    height: 100%;
+    animation-name: example1;
+    animation-duration: 6s;
+}
+
+.titre2{
+    position: absolute;
+    left: 683px;
+    top: 85px;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.progress2{
+    position: relative;
+    left: 47%;
+    background-color: #f2f2f2;
+    height: 10px;
+    width: 600px;
+    top: -140px;
+}
+.prog2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    background-color: #ff6863;
+    height: 100%;
+    animation-name: example2;
+    animation-duration: 5s;
+}
+.titre3{
+    position: absolute;
+    left: 683px;
+    top: 155px;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.progress3{
+    position: relative;
+    left: 47%;
+    background-color: #f2f2f2;
+    height: 10px;
+    width: 600px;
+    top: -80px;
+    
+}
+.prog3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 86%;
+    background-color: #ff6863;
+    height: 100%;
+    animation-name: example3;
+    animation-duration: 4s;
+}
+@keyframes example1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+        background-color: crimson;
+    }
+}
+@keyframes example2{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+        background-color: crimson;
+    }
+}
+@keyframes example3{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 86%;
+        background-color: crimson;
+    }
+}
+
+.line2{
+    top: 40px;
+    width: 100%;
+    opacity: 0.2;
+}
+.numero{
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 100px;
+}
+.numero ul:nth-child(1) {
+    position: absolute;
+    text-align: center;
+    left: -100px;
+
+}
+.numero ul:nth-child(1) li {
+    display: block;
+}
+.numero ul:nth-child(1) li h2 {    
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1a1a;
+    font-size: 35px;
+}
+.numero ul:nth-child(1) li hr {
+    position: absolute;
+    top: 80px;
+    left: 295px;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 196, 0);
+    outline: none;
+    border: none;
+}
+.numero ul:nth-child(1) li h5 {
+    position: absolute;
+    top: 100px;
+    left: 243px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+}
+.numero ul:nth-child(2) {
+    position: absolute;
+    text-align: center;
+    left: 190px;
+
+}
+.numero ul:nth-child(2) li {
+    display: block;
+}
+.numero ul:nth-child(2) li h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1a1a;
+    font-size: 35px;
+}
+.numero ul:nth-child(2) li hr {
+    position: absolute;
+    top: 80px;
+    left: 295px;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 196, 0);
+    outline: none;
+    border: none;
+}
+.numero ul:nth-child(2) li h5 {
+    position: absolute;
+    top: 100px;
+    left: 243px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+}
+.numero ul:nth-child(3) {
+    position: absolute;
+    text-align: center;
+    left: 500px;
+
+}
+.numero ul:nth-child(3) li {
+    display: block;
+}
+.numero ul:nth-child(3) li h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1a1a;
+    font-size: 35px;
+}
+.numero ul:nth-child(3) li hr {
+    position: absolute;
+    top: 80px;
+    left: 295px;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 196, 0);
+    outline: none;
+    border: none;
+}
+.numero ul:nth-child(3) li h5 {
+    position: absolute;
+    top: 100px;
+    left: 255px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+}
+.numero ul:nth-child(4) {
+    position: absolute;
+    text-align: center;
+    left: 800px;
+
+}
+.numero ul:nth-child(4) li {
+    display: block;
+}
+.numero ul:nth-child(4) li h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1a1a;
+    font-size: 35px;
+    animation-name: count4;
+    transition: 3s;
+}
+.numero ul:nth-child(4) li hr {
+    position: absolute;
+    top: 80px;
+    left: 295px;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 196, 0);
+    outline: none;
+    border: none;
+}
+.numero ul:nth-child(4) li h5 {
+    position: absolute;
+    top: 100px;
+    left: 260px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+}
+.all{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.test{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 200px;
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.all h2{
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.100rem;
+    color: #1a1a1a;
+    top: 300px;
+    z-index: 1;
+    
+}
+.precedant{
+    line-height: 40px;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    font-style: bold;
+    top: 520px;
+    left: 80px;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.suivant{
+    line-height: 40px;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    font-style: bold;
+    top: 520px;
+    right: 80px;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.all .texto:nth-child(6),.all .texto:nth-child(7) {
+    display: none;
+}
+.all .texto.active {
+    display: flex;
+}
+.all .texto{
+    display: none;
+}
+.all .texto p{
+    position: absolute;
+    top: 500px;
+    width: 70%;
+    left: 200px;
+    color: #ffffff;
+    line-height: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+}
+.all .texto p:nth-of-type(2){
+    position: absolute;
+    top: 660px;
+    width: 70%;
+    color: #ffffff;
+    line-height: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.all .texto .fa-star{
+    top: 700px;
+    color: rgb(255, 196, 0);
+    font-size: 14px;
+    
+}
+.texto .stars{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 700px;
+    left: 47%;
+}
+
+.pricing{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: -30px;
+    width: 100%;
+    height: 180vh;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+.pric-tit{
+    margin-top: 140px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.900rem;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    position: absolute;
+    
+}
+.pricing hr{
+    
+    width: 120px;
+    top: 190px;
+    position: absolute;
+    border: 1px solid red;
+}
+.pricing .st-par{
+    position:absolute;
+    margin-top: 250px;
+    line-height: 1.4rem;
+    font-size: 14px;
+    font-weight: normal;
+    font-family:sans-serif;
+    color: #797979;
+}
+.list-rect {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    top: 60vh;
+}
+.list-rect1 {
+    position: relative;
+    text-align: center;
+    left: 7%;
+    width: 25vw;
+    height: 90vh;
+    top: 5vh;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgb(184, 184, 184);
+}
+.triangle {
+    position: absolute;
+    width: 100%;
+    height: 31vh;
+    background-color: rgb(211, 207, 207);
+    opacity: .4;
+}
+.list-rect1 h3 {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    left: 9.2vw;
+    top: 3vh;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+
+    text-shadow: #ff6863;
+}
+.list-rect1 .circle-center {
+    position: absolute;
+    top: 18vh;
+    left: 6.4vw;
+    width: 160px;
+    height: 160px;
+    background-color: #ff6863;
+    border-radius: 50%;
+}
+.list-rect1 .disk {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    left: 13px;
+    top: 13px;
+}
+.list-rect1 .circle-center .disk p:nth-child(1) {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    left: 2vw;
+    font-size: 45px;
+    top: 2.5vh;
+    color: #fff;
+}
+.list-rect1 .circle-center .disk p:nth-child(2) {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 18px;
+    left: 1.8vw;
+    top: 11.5vh;
+    color: #fff;
+}
+.list-rect1 ul {
+    position: absolute;
+    top: 45vh;
+    list-style: none;
+}
+.list-rect1 ul li {
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.list-rect1 ul li i {
+    position: absolute;
+    left: 50px;
+}
+.list-rect1 ul li .fa-check-circle {
+    position: absolute;
+    color: #ff6863;
+}
+.list-rect1 ul li .fa-times-circle {
+    position: absolute;
+}
+.list-rect1 ul li p {
+    margin-left: 2.5vw;
+    font-family: sans-serif;
+}
+.list-rect1 button {
+    position: absolute;
+    width: 10vw;
+    height: 8vh;
+    top: 75vh;
+    left: 7.5vw;
+    background-color: #ff6863;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.list-rect1 button:hover {
+    transition: all .3s ease;
+    background-color: rgb(187, 187, 187);
+}
+.list-rect2 {
+    position: relative;
+    text-align: center;
+    left: 12%;
+    width: 25vw;
+    height: 89vh;
+    top: 5vh;
+    background-color: #fff;
+    border-top: 5px solid #ff6863;
+    box-shadow: 10px 10px 10px rgb(184, 184, 184);
+}
+.list-rect2 h3 {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 7.5vw;
+    top: 3vh;
+    font-size: x-large;
+    text-shadow: #ff6863;
+}
+.list-rect2 .circle-center {
+    position: absolute;
+    top: 18vh;
+    left: 6.4vw;
+    width: 160px;
+    height: 160px;
+    background-color: #ff6863;
+    border-radius: 50%;
+}
+.list-rect2 .disk {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    left: 13px;
+    top: 13px;
+}
+.list-rect2 .circle-center .disk p:nth-child(1) {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    left: 2vw;
+    font-size: 45px;
+    top: 2.5vh;
+    color: #fff;
+}
+.list-rect2 .circle-center .disk p:nth-child(2) {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 18px;
+    left: 1.8vw;
+    top: 11.5vh;
+    color: #fff;
+}
+.list-rect2 ul {
+    position: absolute;
+    top: 45vh;
+    list-style: none;
+}
+.list-rect2 ul li {
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.list-rect2 ul li i {
+    position: absolute;
+    left: 50px;
+}
+.list-rect2 ul li .fa-check-circle {
+    position: absolute;
+    color: #ff6863;
+}
+.list-rect2 ul li .fa-times-circle {
+    position: absolute;
+}
+.list-rect2 ul li p {
+    margin-left: 2.5vw;
+    font-family: sans-serif;
+}
+.list-rect2 button {
+    position: absolute;
+    width: 10vw;
+    height: 8vh;
+    top: 75vh;
+    left: 7.5vw;
+    background-color: #ff6863;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.list-rect2 button:hover {
+    transition: all .3s ease;
+    background-color: rgb(187, 187, 187);
+}
+.list-rect3 {
+    position: relative;
+    text-align: center;
+    left: 17%;
+    width: 25vw;
+    height: 90vh;
+    top: 5vh;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgb(184, 184, 184);
+}
+.list-rect3 h3 {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 7.3vw;
+    top: 3vh;
+    font-size: x-large;
+    text-shadow: #ff6863;
+}
+.list-rect3 .circle-center {
+    position: absolute;
+    top: 18vh;
+    left: 6.5vw;
+    width: 160px;
+    height: 160px;
+    background-color: #ff6863;
+    border-radius: 50%;
+}
+.list-rect3 .disk {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    left: 13px;
+    top: 13px;
+}
+.list-rect3 .circle-center .disk p:nth-child(1) {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    left: 2vw;
+    font-size: 45px;
+    top: 2.5vh;
+    color: #fff;
+}
+.list-rect3 .circle-center .disk p:nth-child(2) {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 18px;
+    left: 1.8vw;
+    top: 11.5vh;
+    color: #fff;
+}
+.list-rect3 ul {
+    position: absolute;
+    top: 45vh;
+    list-style: none;
+}
+.list-rect3 ul li {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.list-rect3 ul li i {
+    left: 45px;
+}
+.list-rect3 ul li .fa-check-circle {
+    position: absolute;
+    color: #ff6863;
+}
+.list-rect3 ul li .fa-times-circle {
+    position: absolute;
+}
+.list-rect3 ul li p {
+    margin-left: 2.5vw;
+    font-family: sans-serif;
+}
+.list-rect3 button {
+    position: absolute;
+    width: 10vw;
+    height: 8vh;
+    top: 75vh;
+    left: 7.5vw;
+    background-color: #ff6863;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.list-rect3 button:hover {
+    transition: all .3s ease;
+    background-color: rgb(187, 187, 187);
+}
 
 
 
